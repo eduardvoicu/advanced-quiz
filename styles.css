@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: #009688;
+    background-color: #1c077a;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 *{box-sizing: border-box;}
@@ -15,7 +15,7 @@ body{
 }
 
 .question-number h3 {
-    color:#009788;
+    color:#1c077a;
     border-bottom: 1px solid #ccc;
     margin: 0;
     padding-bottom: 10px;
@@ -63,6 +63,9 @@ body{
     animation: animateBackground 1s ease;
     animation-fill-mode: forwards;
 }
+
+/* Added a transition effect for switching between questions. Reference to the documentation
+https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
 
 @keyframes animateBackground{
     0%{
