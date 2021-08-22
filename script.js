@@ -47,3 +47,17 @@ const questions = [
         answer:3
     }
 ]
+
+// adding function to load the questions 
+
+totalQuestionsSpan.innerHTML = questions.length
+
+function load(){
+    questionNumberSpan.innerHTML = index + 1
+    question.innerHTML = questions[currentIndex].q;
+    opt1.innerHTML = questions[currentIndex].options[zero]   // originally I had 0, 1, 2, 3
+    opt2.innerHTML = questions[currentIndex].options[one]   // changed it to zero, one, two, three
+    opt3.innerHTML = questions[currentIndex].options[two]
+    opt4.innerHTML = questions[currentIndex].options[three]
+    index++
+}
